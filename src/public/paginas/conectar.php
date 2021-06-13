@@ -1,6 +1,6 @@
 <?php
 $usuario = "root";
-$password = "";
+$password = "root";
 $dbname = "programacion";
 
 try{
