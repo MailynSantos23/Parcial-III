@@ -13,7 +13,7 @@
 #}
 
 
-$mysqli = new mysqli("3310", "demo", "12345", "programacion");
+$mysqli = new mysqli("parcial-mysql:3310", "demo", "12345", "programacion");
 if ($mysqli->connect_errno) {
     echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
