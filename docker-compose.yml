@@ -15,12 +15,14 @@ services:
       #volumes:
       #  - .:/application
       environment:
-        - MYSQL_ROOT_PASSWORD=root
-        #- MYSQL_DATABASE=programacion
-        - MYSQL_USER=root
-        - MYSQL_PASSWORD=root
-        volumes: 
-          - ./sql:/docker-entrypoint-initdb.d
+        - MYSQL_ROOT_PASSWORD= 12345
+        - MYSQL_DATABASE= programacion
+        - MYSQL_USER= demo
+        - MYSQL_PASSWORD= 12345
+        #volumes: 
+          # este fue una prueba para utilizar una base de datos que se encuentra en la carpeta sql, la idea era que, utilizara esa base de datos 
+          # como un script, generando la base y las tablas automaticamnete.
+       # - ./sql:/docker-entrypoint-initdb.d
       #ports:
         #- "3312:3306"
 
